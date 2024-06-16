@@ -13,6 +13,7 @@ export class TasksComponent {
   @Input({ required: true }) userId!: string;
   @Input({ required: true }) name!: string;
 
+  //Rendering conditionally
   isAddingTask = false;
 
   tasks = [
@@ -51,5 +52,9 @@ export class TasksComponent {
 
   onStartAddTask() {
     this.isAddingTask = true;
+  }
+
+  onCancelAddTask() {
+    this.isAddingTask = false;
   }
 }

@@ -8,4 +8,10 @@ import { Task } from '../task/task.model';
   templateUrl: './new-task.component.html',
   styleUrl: './new-task.component.css',
 })
-export class NewTaskComponent {}
+export class NewTaskComponent {
+  @Output() cancel = new EventEmitter<void>();
+
+  onCancel() {
+    this.cancel.emit();
+  }
+}
