@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
 
 import { DUMMY_USERS } from './dummy-users';
 
